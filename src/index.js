@@ -13,5 +13,5 @@ app.use(express.json());
 
 app.listen(port, async () => {
     const status = await startServer(app);
-    console.log(status ? "Server started successfully" : "Server failed to start");
+    console.log(status ? "Server started successfully at " + port : "Server failed to start at " + port);
 }) 
